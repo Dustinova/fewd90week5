@@ -30,46 +30,43 @@ function showInputs () {
 
 document.getElementById("assign").onclick = showInputs;
 
-//function copy () {
-	//document.getElementById.("reportcard").innerHTML = 
-//}
 
 
-//document.getElementById("name").onclick = addNameGrade;
-
-//document.getElementById("grade").onclick = addNameGrade;
-
-function addNameGrade () {
+function  () {
 	
-	var student = document.getElementById("Name").value;
+	var student = document.getElementById(" Name").value;
 	var grade = document.getElementById("Grade").value;
 
 	if (grade >= 90) {
-		grade = "A+";
+		 return "A+";
 	}
 	else if (grade >= 85) {
-		grade = "A-";
+		return "A-";
 	}
 	else if (grade >= 80) {
-		grade = "B+";
+		return "B+";
 	}
 	else if (grade >= 75) { 
-		grade = "B-";
+		return "B-";
 	}
 	else if (grade >= 70) {
-		grade = "C+";
+		return "C+";
 	}
 	else if (grade >= 65) {
-		grade = "C-";
+		return "C-";
 	}
 	else if (grade >= 60 ) {
-		grade = "D+";
+		return "D+";
 	}
 	else if (grade >= 55) {
-		grade = "D-";
+		return "D-";
 	}
-	else if (grade >= 0) {
-		grade = "F";
+	else if (grade <= 50) {
+		return "F";
+	}
+
+	else{
+		return null 
 	}
 
 } 
